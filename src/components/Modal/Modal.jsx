@@ -27,7 +27,11 @@ export default class Modal extends Component {
     return createPortal(
       <div className={css.Overlay} onClick={this.handleBackdropClick}>
         <div className={css.Modal}>
-          <img src={this.props.largeImageURL} alt={this.props.alt} />
+          <img
+            className={css.modalImage}
+            src={this.props.largeImageURL}
+            alt={this.props.alt}
+          />
         </div>
       </div>,
       modalRoot

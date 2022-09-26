@@ -28,3 +28,17 @@
   justify-content: center;
   margin-left: 200px;
 }
+
+.errorMessage {
+	text-align: center;
+	color: red;
+}
+
+.cantFindImages{
+	text-align: center;
+	color: red;
+}
+
+.noResults{
+	margin: 100px auto;
+}
