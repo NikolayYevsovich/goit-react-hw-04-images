@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import css from './Searchbar.module.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FiSearch } from 'react-icons/fi';
 
