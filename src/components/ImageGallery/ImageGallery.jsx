@@ -31,8 +31,6 @@ export default class ImageGallery extends Component {
     }
   }
 
-  componentDidMount(prevProps, prevState) {}
-
   loadMore = () => {
     this.setState(prevState => ({
       page: prevState.page + 1,
@@ -40,7 +38,7 @@ export default class ImageGallery extends Component {
   };
 
   render() {
-    const { images, error, status, showModal } = this.state;
+    const { images, error, status } = this.state;
 
     if (status === 'idle') {
       return <h1 className={css.CleanPage}>Please enter search request </h1>;
