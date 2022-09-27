@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Dna } from 'react-loader-spinner';
+import PropTypes from 'prop-types';
 import imagesApi from '../../services/images-api';
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
 import { LoadMoreButton } from '../Button/Button';
@@ -105,3 +106,5 @@ export default class ImageGallery extends Component {
     }
   }
 }
+
+ImageGallery.propTypes = { searchQuery: PropTypes.string.isRequired };
