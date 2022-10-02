@@ -30,7 +30,7 @@ export default function ImageGallery({ searchQuery }) {
         setError(error);
         setStatus('rejected');
       });
-    console.log(images);
+
     if (images !== []) {
       return setImages(images => [...images]);
     }
