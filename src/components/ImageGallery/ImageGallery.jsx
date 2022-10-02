@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Dna } from 'react-loader-spinner';
 import PropTypes from 'prop-types';
 import imagesApi from '../../services/images-api';
@@ -30,8 +30,10 @@ export default function ImageGallery({ searchQuery }) {
         setError(error);
         setStatus('rejected');
       });
-
-    setImages([]);
+    console.log(images);
+    if (images !== []) {
+      return setImages(images => [...images]);
+    }
   }, [searchQuery, page]);
 
   const loadMore = () => {
